@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Jorge Chávez || Password Generator</title>
+</head>
+<body>
+    <main class="container">
+        <section class="screen">
+            <span id="newPassword"></span>
+            <button class="copyIcon" id="copyIcon"><i class="fa-regular fa-copy"></i></button>
+        </section>
+        <section class="controls">
+            <form>
+                <div class="charLength">
+                    <label class="form-slider-label" for="range1">Character Length</label>
+                    <label class="form-slider-Number" for="range1">8</label>
+                </div>
+                
+                    <input id="range1" name="range1" type="range" min="8" max="20" value="8">
+                <label class="form-control">
+                    <input
+                    type="checkbox"
+                    class="check"
+                    id="CHAR"
+                    name="conditionals"
+                    value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">
+                        Include Uppercase Letters
+                </label>
+                <label class="form-control">
+                    <input
+                    type="checkbox"
+                    class="check"
+                    id="char"
+                    name="conditionals"
+                    value="abcdefghijklmnopqrstuvwxyz">
+                        Include Lowercase Letters
+                </label>
+                <label class="form-control">
+                    <input
+                    type="checkbox"
+                    class="check"
+                    id="numb"
+                    name="conditionals"
+                    value="1234567890">
+                        Include Numbers
+                </label>
+                <label class="form-control">
+                    <input
+                    type="checkbox"
+                    class="check"
+                    id="symb"
+                    name="conditionals"
+                    value="!#$%&/()=">
+                        Include Symbols
+                </label>
+                <div class="buttonSize">
+                    <button class="glow-on-hover" id="button-85" type="button">GENERATE <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                
+            </form>
+            
+        </section>
+    </main>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/eac86e9da9.js" crossorigin="anonymous"></script>
+</body>
+</html>
